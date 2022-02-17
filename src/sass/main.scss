@@ -3,5 +3,18 @@
  * Все паршалы подключаются сюда.
  */
 
+// Здесь ничего не трогаем!!!
+@import './base';
+
+@import './feature-header';
+@import './feature-hero';
+@import './feature-products';
+@import './feature-about';
+@import './feature-advantages';
+@import './feature-gallery';
+@import './feature-customer-reviews';
+@import './feature-contacs';
+@import './feature-footer';
+
 // Стили для файла с примером HTML-фрагмента
 @import './example';
