@@ -4,10 +4,15 @@
  */
 
 // Здесь ничего не трогаем!!!
-@import './base';
+@import './base/reset';
+@import './base/body';
+@import './base/container';
+@import './base/hidden';
+@import './base/variables';
 
 @import './feature-header';
 @import './feature-hero';
+@import './modal';
 @import './feature-products';
 @import './feature-about';
 @import './feature-advantages';
@@ -15,6 +20,7 @@
 @import './feature-customer-reviews';
 @import './feature-contacs';
 @import './feature-footer';
+@import './box-menu';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
