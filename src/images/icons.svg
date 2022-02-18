@@ -1,5 +1,8 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
     <defs>
+        <symbol id="icon-vector1" viewBox="0 0 19 32">
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.552 12.8-11.552 12.8"></path>
+        </symbol>
         <symbol id="icon-Vector" viewBox="0 0 19 32">
             <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.2 3.2 16 16 3.2 28.8"/>
         </symbol>
