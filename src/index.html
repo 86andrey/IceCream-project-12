@@ -17,18 +17,24 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/feature-header.html"></include>
-    <include src="./partials/feature-hero.html"></include>
-    <include src="./partials/feature-modal.html"></include>
-    <include src="./partials/feature-products.html"></include>
-    <include src="./partials/feature-about.html"></include>
-    <include src="./partials/feature-advantages.html"></include>
-    <include src="./partials/feature-gallery.html"></include>
-    <include src="./partials/feature-customer-reviews.html"></include>
-    <include src="./partials/feature-contacts.html"></include>
+    <main>
+        <include src="./partials/feature-hero.html"></include>
+        <include src="./partials/feature-modal.html"></include>
+        <include src="./partials/feature-products.html"></include>
+        <include src="./partials/feature-about.html"></include>
+        <include src="./partials/feature-advantages.html"></include>
+        <include src="./partials/feature-gallery.html"></include>
+        <include src="./partials/feature-customer-reviews.html"></include>
+        <include src="./partials/feature-contacts.html"></include>
+    </main>
     <include src="./partials/feature-footer.html"></include>
     <include src="./partials/feature-box-menu.html"></include>
 
         <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+
+
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
