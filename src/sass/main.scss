@@ -4,21 +4,22 @@
  */
 
 // Здесь ничего не трогаем!!!
+@import './base/variables';
 @import './base/reset';
 @import './base/body';
 @import './base/container';
 @import './base/hidden';
-@import './base/variables';
 
-@import './feature-header';
-@import './feature-hero';
+
+@import './header';
+@import './hero';
 @import './modal';
-@import './feature-products';
-@import './feature-about';
-@import './feature-advantages';
-@import './feature-gallery';
-@import './feature-customer-reviews';
-@import './feature-contacs';
-@import './feature-footer';
+@import './products';
+@import './about';
+@import './advantages';
+@import './gallery';
+@import './customer-reviews';
+@import './contacs';
+@import './footer';
 @import './box-menu';
 
