@@ -1,0 +1,67 @@
+.footer {
+  background-color: #fff5f6;
+}
+.footer__made {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  padding-bottom: 17px;
+  width: 232px;
+}
+.footer__passion {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  padding-bottom: 43px;
+  width: 200px;
+}
+.footer__join-contacts {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 46px;
+}
+.footer__join-contacts a {
+}
+.footer__list-icon {
+  width: 32px;
+  height: 32px;
+}
+.footer__join-contacts li:not(:last-child) {
+  padding-right: 28px;
+}
+
+.footer__call {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: right;
+  color: #000000;
+  padding-bottom: 43px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.footer__tel {
+  text-decoration: none;
+  color: #d41443;
+}
+.footer__rights-reserved {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #907e82;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  width: 150px;
+  margin: 0 auto;
+}
