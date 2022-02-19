@@ -1,15 +1,41 @@
 .footer {
   background-color: #fff5f6;
 }
+
+.footer__container {
+  border: 2px solid red;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 116px;
+    padding-right: 114px;
+  }
+}
 .footer__made {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
   padding-bottom: 17px;
   width: 232px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 30px;
+    width: 340px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 34px;
+    width: 474px;
+  }
 }
 .footer__passion {
   font-style: normal;
@@ -21,17 +47,43 @@
   color: #d41443;
   padding-bottom: 43px;
   width: 200px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    padding-bottom: 91px;
+    width: 340px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 66px;
+    width: 500px;
+  }
 }
 .footer__join-contacts {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 46px;
 }
-.footer__join-contacts a {
-}
+
 .footer__list-icon {
   width: 32px;
   height: 32px;
+  fill: #fea5bb;
+
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #d41443;
+    transform: scale(1.25);
+  }
 }
 .footer__join-contacts li:not(:last-child) {
   padding-right: 28px;
@@ -43,14 +95,31 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 22px;
+  letter-spacing: 0.02em;
   text-align: right;
   color: #000000;
   padding-bottom: 43px;
-  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 .footer__tel {
   text-decoration: none;
   color: #d41443;
+
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), font-size 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #fea5bb;
+    font-size: 18px;
+  }
 }
 .footer__rights-reserved {
   font-family: DM Sans;
@@ -58,10 +127,19 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #907e82;
   padding-top: 22px;
   padding-bottom: 16px;
   width: 150px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    line-height: 26px;
+    width: 276px;
+  }
+}
+.footer__bottom {
+  border-top: 1px solid #e1e1e1;
 }
