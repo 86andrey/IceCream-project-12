@@ -1,3 +1,13 @@
+.advantages {
+  background-color: var(--about-bgc);
+  max-width: 1280px;
+  padding-bottom: 97px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 139px;
+  }
+}
+
 .advantages__container {
   @media screen and (min-width: 768px) {
     padding-left: 34px;
@@ -7,15 +17,6 @@
   @media screen and (min-width: 1200px) {
     padding-left: 75px;
     padding-right: 75px;
-  }
-}
-
-.advantages {
-  background-color: var(--about-bgc);
-  padding-bottom: 97px;
-  margin: 0 auto;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 139px;
   }
 }
 
