@@ -1,0 +1,46 @@
+.customer__reviews {
+}
+
+.customer {
+  display: flex;
+
+  justify-content: center;
+  background-color: var(background-color-icon);
+
+  list-style-type: none;
+  text-align: center;
+  margin-left: 178px;
+  margin-right: 176px;
+}
+.customer__item {
+  position: absolute;
+  list-style-type: none;
+
+  & {
+    background-repeat: no-repeat;
+    background-position: center bottom 3px;
+    background-size: 100% 2px;
+    background-image: linear-gradient(to right, #e1e1e1);
+  }
+}
+.customer__icon {
+  /*margin: 28px 165px 240px 61px;*/
+  color: var(color-gradient);
+}
+
+.reviews {
+  background-repeat: no-repeat;
+  background-position: center bottom 3px;
+  background-size: 100% 2px;
+}
+
+.reviews__item {
+  display: flex;
+  justify-content: center;
+
+  line-height: 60px;
+  text-align: center;
+  list-style-type: none;
+  margin-left: 178px;
+  margin-right: 176px;
+}
