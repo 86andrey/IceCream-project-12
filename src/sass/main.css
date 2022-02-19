@@ -4,27 +4,27 @@
  * Все паршалы подключаются сюда.
  */
 :root {
-  --header-color: #ffb8ca;
-  --box-menu-color: #e17992;
-  --primary-white-color: #ffffff;
-  --second-title-color: #d41443;
-  --hero-bgc: #ffa5ba;
-  --box-menu-border: #e18298;
-  --products-color: #e5e5e5;
-  --ice-coffee-color: #f0d1a5;
-  --milkshakes-color: #c2e297;
-  --about-bgc: #fff5f6;
+  --header-color: #FFB8CA;
+  --box-menu-color: #E17992;
+  --primary-white-color: #FFFFFF;
+  --second-title-color: #D41443;
+  --hero-bgc: #FFA5BA;
+  --box-menu-border: #E18298;
+  --products-color: #E5E5E5;
+  --ice-coffee-color: #F0D1A5;
+  --milkshakes-color: #C2E297;
+  --about-bgc: #FFF5F6;
   --title-text-color: #000000;
-  --about-text-color: #907e82;
-  --customer-bgc: #fafafa;
-  --icon-bgc: #e1e1e1;
-  --icon-point-color: #c7133e;
-  --icon-second-color: #d9d9d9;
-  --icon-hover-color: #d31342;
+  --about-text-color: #907E82;
+  --customer-bgc: #FAFAFA;
+  --icon-bgc: #E1E1E1;
+  --icon-point-color: #C7133E;
+  --icon-second-color: #D9D9D9;
+  --icon-hover-color: #D31342;
   --contacs-bgc: rgba(212, 20, 67, 0.1);
-  --btn-color: #d41342;
-  --footer-icon-color: #fea5bb;
-  --btn-hover-color: #ecebeb;
+  --btn-color: #D41342;
+  --footer-icon-color: #FEA5BB;
+  --btn-hover-color: #ECEBEB;
 }
 
 .link {
@@ -37,13 +37,7 @@
   list-style: none;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -65,14 +59,14 @@ img {
 }
 
 body {
-  font-family: 'Titan One', sans-serif;
+  font-family: "Titan One", sans-serif;
 }
 
 .container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -103,18 +97,173 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--header-color);
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.header-logo {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-left: -70px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .site-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.site-list__link {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--primary-white-color);
+}
+
+.site-list__link:hover, .site-list__link:focus {
+  color: var(--second-title-color);
+}
+
+.site-nav {
+  margin-left: 70px;
+}
+
+.site-nav .link.curent {
+  color: var(--second-title-color);
+}
+
+.button {
+  height: 44px;
+  border: transparent;
+  border-radius: 22px;
+  background: var(--primary-white-color);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--second-title-color);
+  padding-right: 53px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    min-width: 160px;
+    padding-left: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    min-width: 159px;
+    margin-left: auto;
+  }
+}
+
+.button:hover, .button:focus {
+  background: var(--btn-hover-color);
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-open-btn {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.button__icon {
+  margin-left: 12px;
+}
+
 .contacts-section {
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(90%, #fff5f6),
-    color-stop(10%, #ffffff)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, #fff5f6), color-stop(10%, #ffffff));
   background: linear-gradient(to top, #fff5f6 90%, #ffffff 10%);
   padding-top: 86px;
   padding-bottom: 113px;
@@ -129,7 +278,7 @@ body {
 .card-list__item {
   background: #ffffff;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
 }
@@ -148,11 +297,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #f0d1a5;
@@ -256,11 +405,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 17px 17px;
   margin-top: 54px;
@@ -281,3 +430,4 @@ body {
 .contact-btn__icon-locations {
   margin-left: 8px;
 }
+/*# sourceMappingURL=main.css.map */
