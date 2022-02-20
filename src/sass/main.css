@@ -641,7 +641,7 @@ body {
 }
 
 .about {
-  background-color: var(--about-bgc);
+  background-color: #fff5f6;
   padding-top: 125px;
   padding-bottom: 39px;
 }
@@ -663,18 +663,18 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
-  line-height: 1.14;
+  line-height: calc(21px / 18px);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--second-title-color);
+  color: #d41443;
   margin-bottom: 26px;
 }
 
 @media screen and (min-width: 768px) {
   .about-title {
     font-size: 48px;
-    line-height: 1.14;
+    line-height: calc(55px / 48px);
     margin-bottom: 50px;
   }
 }
@@ -682,7 +682,7 @@ body {
 @media screen and (min-width: 1200px) {
   .about-title {
     font-size: 58px;
-    line-height: 1.14;
+    line-height: calc(66px / 58px);
     margin-bottom: 55px;
   }
 }
@@ -700,17 +700,17 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: calc(21px / 18px);
   text-align: center;
   text-transform: uppercase;
-  color: var(--hero-bgc);
+  color: #ffa5ba;
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .about-label {
     font-size: 26px;
-    line-height: 1.15;
+    line-height: calc(30px / 26px);
     margin-bottom: 16px;
   }
 }
@@ -718,7 +718,7 @@ body {
 @media screen and (min-width: 1200px) {
   .about-label {
     font-size: 30px;
-    line-height: 1.13;
+    line-height: calc(34px / 30px);
     letter-spacing: 0.04em;
   }
 }
@@ -732,8 +732,8 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
-  color: var(--title-text-color);
+  line-height: calc(19px / 12px);
+  color: #000000;
   margin-bottom: 47px;
 }
 
@@ -741,7 +741,7 @@ body {
   .about-list__text-dark {
     width: 340px;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: calc(25px / 14px);
   }
 }
 
@@ -759,8 +759,8 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
-  color: var(--about-text-color);
+  line-height: calc(19px / 12px);
+  color: #907e82;
   letter-spacing: 0.04em;
 }
 
@@ -768,14 +768,14 @@ body {
   .about-list__text-light {
     width: 340px;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: calc(25px / 14px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about-list__text-light {
     width: 463px;
-    line-height: 1.94;
+    line-height: calc(27px / 14px);
   }
 }
 
@@ -839,9 +839,9 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.31;
-  color: var(--btn-color);
-  background: var(--primary-white-color);
+  line-height: calc(21px / 16px);
+  color: #d41342;
+  background: #ffffff;
   border-radius: 22px;
   border: none;
   cursor: pointer;

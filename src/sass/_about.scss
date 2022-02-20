@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--about-bgc);
+  background-color: $about-bgc;
   padding-top: 125px;
   padding-bottom: 39px;
   @media screen and (min-width: 768px) {
@@ -14,20 +14,21 @@
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
-  line-height: 1.14;
+  line-height: calc(21px / 18px);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--second-title-color);
+  color: $second-title-color;
   margin-bottom: 26px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 1.14;
+    line-height: calc(55px / 48px);
     margin-bottom: 50px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
-    line-height: 1.14;
+    line-height: calc(66px / 58px);
+
     margin-bottom: 55px;
   }
 }
@@ -41,19 +42,19 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: calc(21px / 18px);
   text-align: center;
   text-transform: uppercase;
-  color: var(--hero-bgc);
+  color: $hero-bgc;
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
-    line-height: 1.15;
+    line-height: calc(30px / 26px);
     margin-bottom: 16px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
-    line-height: 1.13;
+    line-height: calc(34px / 30px);
     letter-spacing: 0.04em;
   }
 }
@@ -66,14 +67,14 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
-  color: var(--title-text-color);
+  line-height: calc(19px / 12px);
+  color: $title-text-color;
   margin-bottom: 47px;
   // margin-top: 46px;
   @media screen and (min-width: 768px) {
     width: 340px;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: calc(25px / 14px);
   }
   @media screen and (min-width: 1200px) {
     width: 463px;
@@ -88,17 +89,17 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.58;
-  color: var(--about-text-color);
+  line-height: calc(19px / 12px);
+  color: $about-text-color;
   letter-spacing: 0.04em;
   @media screen and (min-width: 768px) {
     width: 340px;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: calc(25px / 14px);
   }
   @media screen and (min-width: 1200px) {
     width: 463px;
-    line-height: 1.94;
+    line-height: calc(27px / 14px);
   }
 }
 .line-break {
@@ -140,9 +141,9 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.31;
-  color: var(--btn-color);
-  background: var(--primary-white-color);
+  line-height: calc(21px / 16px);
+  color: $btn-color;
+  background: $primary-white-color;
   border-radius: 22px;
   border: none;
   cursor: pointer;
