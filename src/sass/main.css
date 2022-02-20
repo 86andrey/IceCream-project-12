@@ -151,11 +151,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--primary-white-color);
+  color: #ffffff;
 }
 
 .site-list__link:hover, .site-list__link:focus {
-  color: var(--second-title-color);
+  color: #d41443;
 }
 
 .site-nav {
@@ -163,46 +163,46 @@ body {
 }
 
 .site-nav .link.curent {
-  color: var(--second-title-color);
+  color: #d41443;
 }
 
-.button {
+.button-header {
   height: 44px;
   border: transparent;
   border-radius: 22px;
-  background: var(--primary-white-color);
+  background: #ffffff;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: var(--second-title-color);
+  color: #d41443;
   padding-right: 53px;
   text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-  .button {
+  .button-header {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .button {
+  .button-header {
     min-width: 160px;
     padding-left: 37px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .button {
+  .button-header {
     min-width: 159px;
     margin-left: auto;
   }
 }
 
-.button:hover, .button:focus {
-  background: var(--btn-hover-color);
+.button-header:hover, .button-header:focus {
+  background: #ecebeb;
 }
 
 .menu-open-btn {
@@ -1774,7 +1774,7 @@ body {
 
 .mob-menu {
   position: fixed;
-  background-color: var(--box-menu-color);
+  background-color: #e17992;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1817,14 +1817,14 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: transparent;
-  fill: var(--primary-white-color);
+  fill: #ffffff;
   cursor: pointer;
   border: none;
   outline: none;
 }
 
 .menu-close-btn:hover, .menu-close-btn:focus {
-  fill: var(--second-title-color);
+  fill: #d41443;
 }
 
 .mob-list__link {
@@ -1832,7 +1832,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
-  color: var(--primary-white-color);
+  color: #ffffff;
 }
 
 .mob-list__item:not(:last-child) {
@@ -1840,7 +1840,7 @@ body {
 }
 
 .mob-nav .curent {
-  color: var(--second-title-color);
+  color: #d41443;
 }
 
 .menu-open-btn {
@@ -1862,12 +1862,12 @@ body {
   margin-bottom: 32px;
   border: transparent;
   border-radius: 22px;
-  background: var(--primary-white-color);
+  background: #ffffff;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: var(--second-title-color);
+  color: #d41443;
   padding-left: 48px;
   padding-right: 48px;
   text-align: center;
