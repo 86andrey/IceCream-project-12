@@ -789,6 +789,189 @@ body {
   margin-left: 8px;
 }
 
+.footer {
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    padding-left: 116px;
+    padding-right: 114px;
+  }
+}
+
+.footer__made {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fea5bb;
+  padding-bottom: 17px;
+  width: 232px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__made {
+    font-size: 26px;
+    line-height: 1.15385;
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__made {
+    font-size: 30px;
+    line-height: 1.13333;
+    width: 474px;
+  }
+}
+
+.footer__passion {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14706;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  padding-bottom: 43px;
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__passion {
+    font-size: 48px;
+    line-height: 1.14583;
+    letter-spacing: 0.06em;
+    padding-bottom: 91px;
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__passion {
+    font-size: 58px;
+    line-height: 1.13793;
+    width: 500px;
+  }
+}
+
+.footer__join-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 46px;
+}
+
+.footer__list-icon {
+  width: 32px;
+  height: 32px;
+  fill: #fea5bb;
+  -webkit-transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer__list-icon:hover, .footer__list-icon:focus {
+  fill: #d41443;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.footer__join-contacts li:not(:last-child) {
+  padding-right: 28px;
+}
+
+.footer__call {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83333;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: #000000;
+  padding-bottom: 43px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__call {
+    font-size: 14px;
+    line-height: 1.85714;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__call {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.footer__tel {
+  text-decoration: none;
+  color: #d41443;
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), font-size 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), font-size 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__tel:hover, .footer__tel:focus {
+  color: #fea5bb;
+  font-size: 18px;
+}
+
+.footer__rights-reserved {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #907e82;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__rights-reserved {
+    line-height: 1.85714;
+    width: 276px;
+  }
+}
+
+.footer__bottom {
+  border-top: 1px solid #e1e1e1;
+}
+
 .mob-menu {
   position: fixed;
   background-color: var(--box-menu-color);
