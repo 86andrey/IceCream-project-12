@@ -47,30 +47,30 @@
   font-size: 16px;
   line-height: 1.31;
   align-items: center;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   &:hover,
   &:focus {
-    color: var(--second-title-color);
+    color: $second-title-color;
   }
 }
 .site-nav {
   margin-left: 70px;
 }
 .site-nav .link.curent {
-  color: var(--second-title-color);
+  color: $second-title-color;
 }
-.button {
+.button-header {
   height: 44px;
 
   border: transparent;
   border-radius: 22px;
-  background: var(--primary-white-color);
+  background: $primary-white-color;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: var(--second-title-color);
+  color: $second-title-color;
 
   padding-right: 53px;
 
@@ -89,7 +89,7 @@
   }
   &:hover,
   &:focus {
-    background: var(--btn-hover-color);
+    background: $btn-hover-color;
   }
 }
 .menu-open-btn {

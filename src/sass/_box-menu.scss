@@ -1,6 +1,6 @@
 .mob-menu {
   position: fixed;
-  background-color: var(--box-menu-color);
+  background-color: $box-menu-color;
   top: 0;
   left: 0;
   width: 100vw;
@@ -33,13 +33,13 @@
   margin-bottom: 23px;
   display: inline-flex;
   background-color: transparent;
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
   cursor: pointer;
   border: none;
   outline: none;
   &:hover,
   &:focus {
-    fill: var(--second-title-color);
+    fill: $second-title-color;
   }
 }
 .mob-list__link {
@@ -47,13 +47,13 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 .mob-list__item:not(:last-child) {
   margin-bottom: 22px;
 }
 .mob-nav .curent {
-  color: var(--second-title-color);
+  color: $second-title-color;
 }
 .menu-open-btn {
   background-color: transparent;
@@ -71,12 +71,12 @@
   margin-bottom: 32px;
   border: transparent;
   border-radius: 22px;
-  background: var(--primary-white-color);
+  background: $primary-white-color;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: var(--second-title-color);
+  color: $second-title-color;
   padding-left: 48px;
   padding-right: 48px;
   text-align: center;
