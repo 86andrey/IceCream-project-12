@@ -1,25 +1,21 @@
 .advantages {
-  background-color: var(--about-bgc);
-  max-width: 1280px;
+  background-color: $about-bgc;
   padding-bottom: 97px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     padding-bottom: 139px;
   }
 }
-
 .advantages__container {
   @media screen and (min-width: 768px) {
     padding-left: 34px;
     padding-right: 34px;
   }
-
   @media screen and (min-width: 1200px) {
     padding-left: 75px;
     padding-right: 75px;
   }
 }
-
 .advantages__list {
   margin-bottom: -38px;
   @media screen and (min-width: 768px) {
@@ -31,7 +27,6 @@
     margin: -15px;
   }
 }
-
 .advantages__item {
   width: 230px;
   height: 156px;
@@ -47,7 +42,6 @@
     flex-basis: calc(100% / 3 - 30px);
     margin: 15px;
   }
-
   &::before {
     content: '';
     display: block;
@@ -62,21 +56,18 @@
       margin-bottom: 40px;
     }
   }
-
   &:first-child::before {
     background-image: url(../images/advantage/advantageIcon1.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/advantage/advantageIcon1@2x.png);
     }
   }
-
   &:nth-child(2)::before {
     background-image: url(../images/advantage/advantageIcon2.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/advantage/advantageIcon2@2x.png);
     }
   }
-
   &:last-child::before {
     background-image: url(../images/advantage/advantageIcon3.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -84,14 +75,13 @@
     }
   }
 }
-
 .advantages__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--second-title-color);
+  color: $second-title-color;
   margin-bottom: 13px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -101,14 +91,13 @@
     margin-bottom: 15px;
   }
 }
-
 .advantages__text {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: $title-text-color;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 174%;
