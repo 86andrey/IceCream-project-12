@@ -1,20 +1,81 @@
 .contacts-section {
-  background: linear-gradient(to top, #fff5f6 90%, #ffffff 10%);
+  background: linear-gradient(to top, $about-bgc 90%, $primary-white-color 10%);
   padding-top: 86px;
   padding-bottom: 113px;
+  @media screen and(min-width: 768px) {
+    background: linear-gradient(to top, $about-bgc 80%, $primary-white-color 20%);
+    padding-top: 119px;
+    padding-bottom: 158px;
+  }
+  @media screen and(min-width: 1200px) {
+    background-image: url(../images/contact/contactBg.png),
+      linear-gradient($primary-white-color 22%, $about-bgc 2%, $about-bgc 76%);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 132px;
+    padding-bottom: 165px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contact/contactBg@2x.png);
+    }
+  }
 }
 .contacts-container {
-  width: 220px;
   min-height: 427px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: auto;
+  @media screen and(min-width: 768px) {
+    padding-left: 36px;
+    padding-right: 36px;
+    min-height: 544px;
+    margin: auto;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-left: 114px;
+    padding-right: 114px;
+    min-height: 572px;
+    margin: auto;
+  }
+}
+.card-list {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: -31px;
+  }
 }
 .card-list__item {
-  background: #ffffff;
+  background: $primary-white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(212, 20, 68, 0.336);
+  }
+  @media screen and(min-width: 768px) {
+    padding: 50px 32px 50px 31px;
+    width: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    padding: 51px 44px 62px 43px;
+    width: calc(100% / 3 - 31px);
+    margin-left: 31px;
   }
 }
 .card-list__item-category {
@@ -27,17 +88,29 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #f0d1a5;
+  color: $primary-white-color;
+  background: $ice-coffee-color;
   border-radius: 4px;
   width: 80px;
   height: 16px;
   margin-bottom: 25px;
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .card-list__item-foodtruck {
-  background: #c2e297;
-  border-radius: 4px;
+  background: $milkshakes-color;
   width: 130px;
+  @media screen and(min-width: 768px) {
+    width: 138px;
+  }
 }
 .card-inform {
   border-bottom: 1px solid #e1e1e1;
@@ -49,8 +122,16 @@
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $title-text-color;
   margin-bottom: 10px;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 .card-inform__text {
   font-family: DM Sans;
@@ -58,12 +139,28 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: $about-text-color;
   margin-bottom: 25px;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.83;
+    margin-bottom: 32px;
+  }
 }
 .card-schedule {
   margin-top: 25px;
   border-bottom: 1px solid #e1e1e1;
+  @media screen and(min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-top: 32px;
+  }
 }
 .card-schedule__days {
   font-family: DM Sans;
@@ -72,7 +169,13 @@
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $title-text-color;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .card-schedule__time {
   font-family: DM Sans;
@@ -81,16 +184,40 @@
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
-  color: #ffa5ba;
+  color: $hero-bgc;
   &:not(:last-child) {
     margin-bottom: 10px;
   }
   &:last-child {
     margin-bottom: 25px;
   }
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
 }
 .card-address {
   margin-top: 25px;
+  @media screen and(min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-top: 32px;
+  }
 }
 .address-list__item-link {
   font-family: DM Sans;
@@ -98,7 +225,26 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: $about-text-color;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $btn-color;
+  }
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+// ----------------КНОПКИ--------------------//
+.btn-container {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .contact-btn {
   font-family: DM Sans;
@@ -106,8 +252,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #ffffff;
-  background: #d41342;
+  color: $primary-white-color;
+  background-color: $btn-color;
   border-radius: 22px;
   border: none;
   width: 161px;
@@ -117,19 +263,354 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 17px 17px;
+  padding-left: 17px;
+  padding-right: 17px;
   margin-top: 54px;
+  transition: background-image 500ms cubic-bezier(0.4, 0, 0.2, 1) transform 500ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(45deg, rgb(240, 255, 0) 14%, rgb(232, 19, 19) 60%);
+    transform: scale(1.1);
+  }
+  @media screen and(min-width: 768px) {
+    width: 191px;
+    margin: 81px 0 0 0;
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 198px;
+    margin: 86px 0 0 0;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 .contact-franchise {
-  color: #d41443;
-  background: #ffffff;
+  color: $second-title-color;
+  background-color: $primary-white-color;
   margin-top: 10px;
   padding-left: 32px;
   padding-right: 32px;
+  transition: background-image 500ms cubic-bezier(0.4, 0, 0.2, 1) transform 500ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(45deg, rgb(229, 255, 0) 14%, rgb(255, 117, 117) 60%);
+    transform: scale(1.1);
+  }
+  @media screen and(min-width: 768px) {
+    width: 174px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-top: 81px;
+    margin-left: 14px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 180px;
+    padding-left: 39px;
+    padding-right: 40px;
+    margin-top: 86px;
+    margin-left: 15px;
+  }
 }
 .contact-btn__icon-franchise {
   margin-left: 14px;
+  @media screen and(min-width: 768px) {
+    margin-left: 13px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 14px;
+  }
 }
 .contact-btn__icon-locations {
   margin-left: 8px;
+  @media screen and(min-width: 768px) {
+    margin-left: 12px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 14px;
+  }
+}
+// --------------------ФРАНШИЗА --------------------//
+.franchise-container {
+  display: grid;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-franchise {
+  @media screen and (min-width: 320px) {
+    width: 300px;
+    min-height: 500px;
+    background-color: $header-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    padding: 30px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+    min-height: 400px;
+  }
+}
+.modal-franchise__close {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: $contacs-bgc;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    background-color: $title-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+.modal-franchise__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+    font-size: 21px;
+  }
+}
+.franchise-field {
+  margin-bottom: 10px;
+}
+.franchise-field__label {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: $about-text-color;
+}
+.franchise-wrap {
+  position: relative;
+  margin-top: 4px;
+}
+.franchise-wrap__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.franchise-wrap__modal {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 42px;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: $footer-icon-color;
+  }
+  &:focus + .franchise-wrap__icon {
+    fill: $footer-icon-color;
+  }
+}
+.franchise-wrap__comment {
+  width: 100%;
+  height: 85px;
+  resize: none;
+  padding: 12px 12px 12px 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::placeholder {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $about-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.67;
+    height: 100px;
+  }
+  &:focus {
+    border-color: $footer-icon-color;
+  }
+}
+.policy-text {
+  @media screen and (min-width: 320px) {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+.policy-check:checked + .policy-text::before {
+  border: none;
+  background-image: url(../images/contact/check.svg),
+    linear-gradient(45deg, rgb(43, 42, 43), rgb(0, 0, 0) 52%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.modal-franchise__btn {
+  @media screen and (min-width: 320px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    min-height: 12px;
+    background: $footer-icon-color;
+    border-radius: 4px;
+    border: none;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    padding: 10px 20px 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      background-color: $title-text-color;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 110px;
+    min-height: 30px;
+    line-height: 1.87;
+  }
+}
+//------------------------- КАРТА--------------------//
+.map {
+  width: 100%;
+}
+.map-container {
+  display: grid;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-map {
+  @media screen and (min-width: 320px) {
+    width: 313px;
+    background-color: $primary-white-color;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+    min-height: 500px;
+  }
+}
+.modal-map__close {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: $footer-icon-color;
+  margin-bottom: 5px;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    background-color: black;
+  }
+}
+.modal-map__icon {
+  fill: #212121;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-map__close:hover &,
+  .modal-map__close:focus & {
+    transform: scale(1.1);
+  }
+}
+.modal-map__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $footer-icon-color;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
