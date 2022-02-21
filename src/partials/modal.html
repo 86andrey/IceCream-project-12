@@ -1,0 +1,62 @@
+<div data-modalHeader class="popup is-hidden">
+    <div class="modal-header">
+        <button data-modalHeader-close type="button" class="button-popup">
+            <svg class="popup-icon" width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="forma-header">
+
+            <div class="header-form">
+                <b class="header-form__text">Goods order form</b>
+                <label class="header-form__label" for="name">username</label>
+                <input class="header-form__input" type="text" name="name" id="name" placeholder=" ">
+                <svg class="header-form__icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+            </div>
+
+            <div class="header-form">
+                <label class="header-form__label" for="tel">tel</label>
+                <input class="header-form__input" type="tel" name="tel" id="tel" placeholder=" ">
+                <svg class="header-form__icon" width="13" height="13">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+            </div>
+
+            <div class="header-form">
+                <label class="header-form__label" for="mail">E-mail</label>
+                <input class="header-form__input" type="email" name="mail" id="mail required" placeholder=" ">
+                <svg class="header-form__icon" width="15" height="12">
+                    <use href="./images/icons.svg#icon-letter"></use>
+                </svg>
+            </div>
+            <div class="header-form">
+                <p class="header-form__text">Icecream:</p>
+                <label class="header-form__label">
+                    <input type="radio" name="icecream" value="chocolate" checked />
+                    chocolate
+                </label>
+                <label class="header-form__label">
+                    <input type="radio" name="icecream" value="vanilla" />
+                    vanilla
+                </label>
+                <label class="header-form__label">
+                    <input type="radio" name="icecream" value="fruit icecream" />
+                    fruit icecream
+                </label>
+            </div>
+            <div class="header-form">
+                <label for=" amount-1" class="header-form__label">How many ice-cream do you want to order?</label>
+                <input type="number" required min="1" max="10" step="1" value="0" name="amount-1" id="amount-1"
+                    class="header-form__input">
+            </div>
+
+            <button class="send-goods" type="submit">Send</button>
+
+        </form>
+
+
+    </div>
+
+</div>
