@@ -77,6 +77,10 @@ body {
   margin: -1px;
 }
 
+.header {
+  background-color: #ffb8ca;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +91,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffb8ca;
   padding-top: 6px;
   padding-left: 20px;
   padding-right: 20px;
