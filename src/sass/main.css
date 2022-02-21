@@ -119,6 +119,11 @@ body {
   }
 }
 
+.site-list {
+  position: relative;
+  z-index: 1;
+}
+
 @media screen and (max-width: 1199px) {
   .site-list {
     display: none;
@@ -206,6 +211,8 @@ body {
 }
 
 .menu-open-btn {
+  position: relative;
+  z-index: 1;
   background-color: transparent;
   border: none;
   outline: none;
