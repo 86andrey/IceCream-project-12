@@ -1,0 +1,57 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bcr-modal;
+  opacity: 1;
+  transition: opacity $duration $timing-fuction, visibility $duration $timing-fuction;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $duration $timing-fuction;
+
+  min-width: 528px;
+  min-height: 581px;
+  background: $primary-white-color;
+  border-radius: 4px;
+  box-shadow: $team-shadow;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.button-modal {
+  position: absolute;
+  right: 8px;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: $primary-white-color;
+  border: 1px solid $border-modal;
+  @extend %center-flex;
+  margin: 8px;
+  padding: 0;
+
+  cursor: pointer;
+
+  transition: fill $duration $timing-fuction, border $duration $timing-fuction;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
