@@ -1149,6 +1149,10 @@ body {
   margin-left: 50px;
 }
 
+.about-btn:hover, .about-btn:focus {
+  background-color: #ecebeb;
+}
+
 @media screen and (min-width: 768px) {
   .about-btn {
     margin-top: 62px;
@@ -1165,6 +1169,128 @@ body {
 
 .about-btn__icon {
   margin-left: 14px;
+}
+
+.backdrop {
+  display: -ms-grid;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  z-index: 1;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #ffa5ba;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal {
+    width: 90vw;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    font-size: 24px;
+  }
+}
+
+.icon-close {
+  width: 14px;
+  height: 14px;
+}
+
+.btn-modal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #ffa5ba;
+  cursor: pointer;
+}
+
+.modal-about__list {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.modal-about__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: calc(17px / 13px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-indent: 25px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-about__text {
+    font-size: 19px;
+    line-height: calc(25px / 19px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-about__text {
+    font-size: 24px;
+    line-height: calc(32px / 24px);
+  }
+}
+
+.modal-about__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .advantages {
