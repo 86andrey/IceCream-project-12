@@ -1,8 +1,10 @@
+.header {
+  background-color: $header-color;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $header-color;
 
   padding-top: 6px;
   padding-left: 20px;
