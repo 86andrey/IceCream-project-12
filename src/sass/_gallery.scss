@@ -1,5 +1,5 @@
 .gallery {
-  background-image: linear-gradient(to bottom, var(--about-bgc) 39%, var(--products-color) 61%);
+  background-image: linear-gradient(to bottom, $about-bgc 39%, $products-color 61%);
   padding: 0%;
   margin: 0;
 }
