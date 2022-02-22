@@ -66,19 +66,22 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: $header-color;
+  background-color: $header-color;
+  fill: $title-text-color;
   border: none;
+  border: transparent;
   display: flex;
   align-items: center;
   margin: 8px;
   padding: 0;
-  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    fill: $second-title-color;
+    background-color: $second-title-color;
   }
 }
 .forma-header {
+  overflow-y: scroll;
   margin: auto;
   // margin-right: auto;
   // margin-left: auto;
@@ -106,9 +109,12 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
     border: 1px solid $hero-bgc;
+    color: $second-title-color;
+    fill: $second-title-color;
   }
 }
 .header-form__label {
@@ -124,6 +130,7 @@
 }
 .forma-header:focus-within {
   border-color: $second-title-color;
+  color: $second-title-color;
 }
 .header-form::placeholder {
   color: $second-title-color;
@@ -146,16 +153,15 @@
 .header-form {
   position: relative;
 }
-.header-form__input:focus ~ .form-icon {
-  fill: $icon-hover-color;
+.header-form__input:focus ~ .header-form__label {
+  color: $second-title-color;
 }
 .send-goods {
   display: block;
-  width: 200px;
-  height: 50px;
-  border-radius: 50%;
+  width: 159px;
+  height: 44px;
   background-color: $second-title-color;
-  border-radius: 4px;
+  border-radius: 22px;
   border: transparent;
   font-family: DM Sans;
   font-weight: 700;
@@ -172,6 +178,6 @@
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    background-color: $btn-color;
+    background-color: $hero-bgc;
   }
 }

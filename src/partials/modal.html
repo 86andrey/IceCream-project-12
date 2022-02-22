@@ -1,6 +1,6 @@
 <div class="popup is-hidden" data-modalHeader>
     <div class="modal-header">
-       
+
         <form class="forma-header">
             <button type="button" class="button-popup" data-modalHeader-close>
                 <svg class="popup-icon" width="11" height="11">
@@ -11,7 +11,7 @@
             <div class="header-form">
                 <b class="header-form__text">Goods order form</b>
                 <label class="header-form__label" for="name">username</label>
-                <input class="header-form__input" type="text" name="name" id="name" placeholder=" ">
+                <input class="header-form__input" type="text" name="name" id="name autofocus" placeholder=" ">
                 <svg class="header-form__icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
@@ -26,8 +26,8 @@
             </div>
 
             <div class="header-form">
-                <label class="header-form__label" for="mail">E-mail</label>
-                <input class="header-form__input" type="email" name="mail" id="mail required" placeholder=" ">
+                <label class="header-form__label" for="mail">email</label>
+                <input class="header-form__input" type="email" name="mail" id="mail" placeholder=" ">
                 <svg class="header-form__icon" width="15" height="12">
                     <use href="./images/icons.svg#icon-letter"></use>
                 </svg>
@@ -49,7 +49,7 @@
             </div>
             <div class="header-form">
                 <label for=" amount-1" class="header-form__label">How many ice-cream do you want to order?</label>
-                <input type="number" required min="1" max="10" step="1" value="0" name="amount-1" id="amount-1"
+                <input type="number" required min="1" max="100" step="1" value="1" name="amount-1" id="amount-1"
                     class="header-form__input">
             </div>
 
