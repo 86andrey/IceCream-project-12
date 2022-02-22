@@ -1,16 +1,27 @@
 .gallery {
-  background-image: linear-gradient(to bottom, $about-bgc 39%, $products-color 61%);
-  padding: 0%;
-  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    $about-bgc 40%,
+    $primary-white-color 2%,
+    $primary-white-color 58%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  // padding: 0%;
+  // margin: 0;
 }
 .gallery-container {
   @media screen and (min-width: 768px) {
     min-width: 786px;
     min-height: 264px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
   @media screen and (min-width: 1200px) {
     min-width: 1200px;
     min-height: 430px;
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }
 .gallery-list {
