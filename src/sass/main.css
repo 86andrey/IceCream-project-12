@@ -2600,12 +2600,17 @@ body.modal-open {
   background-color: #fff5f6;
 }
 
+.footer__container {
+  padding-bottom: 43px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
     justify-content: space-between;
     padding-left: 36px;
     padding-right: 36px;
+    padding-bottom: 91px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2623,7 +2628,7 @@ body.modal-open {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fea5bb;
-  padding-bottom: 17px;
+  margin-bottom: 17px;
   width: 232px;
 }
 @media screen and (min-width: 768px) {
@@ -2649,7 +2654,6 @@ body.modal-open {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  padding-bottom: 43px;
   width: 200px;
 }
 @media screen and (min-width: 768px) {
@@ -2657,7 +2661,6 @@ body.modal-open {
     font-size: 48px;
     line-height: 1.1458333333;
     letter-spacing: 0.06em;
-    padding-bottom: 91px;
     width: 340px;
   }
 }
@@ -2671,8 +2674,10 @@ body.modal-open {
 
 .footer__join-contacts {
   display: flex;
-  justify-content: flex-end;
-  padding-bottom: 46px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 46px;
 }
 
 .footer__list-icon {
@@ -2693,7 +2698,7 @@ body.modal-open {
 }
 
 .footer__join-contacts li:not(:last-child) {
-  padding-right: 28px;
+  margin-right: 28px;
 }
 
 .footer__call {
@@ -2705,7 +2710,6 @@ body.modal-open {
   letter-spacing: 0.02em;
   text-align: right;
   color: #000000;
-  padding-bottom: 43px;
 }
 @media screen and (min-width: 768px) {
   .footer__call {
@@ -2739,8 +2743,6 @@ body.modal-open {
   letter-spacing: 0.02em;
   text-align: center;
   color: #907e82;
-  padding-top: 22px;
-  padding-bottom: 16px;
   width: 150px;
   margin: 0 auto;
 }
@@ -2753,6 +2755,11 @@ body.modal-open {
 
 .footer__bottom {
   border-top: 1px solid #e1e1e1;
+}
+
+.footer__mini-container {
+  padding-top: 22px;
+  padding-bottom: 16px;
 }
 
 .mob-menu {
