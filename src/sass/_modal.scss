@@ -1,11 +1,11 @@
 .popup {
-  z-index: 1;
-  position: fixed;
+  display: grid;
+  z-index: 3;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-
   opacity: 1;
   transform: perspective(600px) translate(0px, 0%) rotate(0deg);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -14,27 +14,23 @@
 .modal-header {
   background: $box-menu-color;
   border-radius: 4px;
-
   padding: 20px;
-
   @media screen and (min-width: 480px) {
     position: absolute;
     width: 450px;
     height: 609px;
-    top: 50%;
-    left: 50%;
-
+    // top: 50%;
+    // left: 50%;
     transform: perspective(600px) translate(0px, 0%) rotate(0deg);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
     padding: 40px;
   }
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    // top: 50%;
+    // left: 50%;
     padding: 40px;
     transform: perspective(600px) translate(0px, 0%) rotate(0deg);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -62,12 +58,10 @@
   border-radius: 50%;
   background: $header-color;
   border: none;
-
   display: flex;
   align-items: center;
   margin: 8px;
   padding: 0;
-
   transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
@@ -75,8 +69,10 @@
   }
 }
 .forma-header {
-  margin-right: auto;
-  margin-left: auto;
+  overflow-y: scroll;
+  margin: auto;
+  // margin-right: auto;
+  // margin-left: auto;
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
@@ -120,7 +116,6 @@
 .forma-header:focus-within {
   border-color: $second-title-color;
 }
-
 .header-form::placeholder {
   color: $second-title-color;
 }
@@ -133,7 +128,6 @@
   color: $primary-white-color;
   margin-bottom: 12px;
 }
-
 .header-form__icon {
   position: absolute;
   bottom: 11px;
@@ -146,13 +140,11 @@
 .header-form__input:focus ~ .form-icon {
   fill: $icon-hover-color;
 }
-
 .send-goods {
   display: block;
   width: 200px;
   height: 50px;
   background-color: $second-title-color;
-
   border-radius: 4px;
   border: transparent;
   font-family: DM Sans;
@@ -163,14 +155,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: $primary-white-color;
-
   padding: 10px 55px;
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
-
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:focus,
   &:hover {
     background-color: $btn-color;
