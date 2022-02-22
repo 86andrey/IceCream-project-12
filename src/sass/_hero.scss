@@ -6,7 +6,6 @@
   height: 452px;
   padding-top: 137px;
   text-align: left;
-  outline: red 1px solid;
   @media screen and (max-width: 370px) {
     overflow: hidden;
   }
@@ -16,7 +15,6 @@
   @media screen and (min-width: 768px) {
     // height: 399px;
     height: 308px;
-
     // padding-right: 34px;
     padding-top: 15px;
   }
@@ -30,7 +28,7 @@
 }
 .hero-tittle {
   position: relative;
-  z-index: 16;
+  z-index: 2;
   font-family: Titan One;
   font-weight: 400;
   font-size: 26px;
@@ -101,7 +99,7 @@
 .hero-btn__style {
   display: block;
   position: relative;
-  z-index: 30;
+  z-index: 5;
   min-width: 63px;
   min-height: 24px;
   border-radius: 20px;
@@ -131,9 +129,10 @@
 }
 .hero-btn {
   display: flex;
+  position: relative;
+  z-index: 2;
   align-items: center;
   position: relative;
-  z-index: 1;
 }
 .hero__text {
   font-family: DM Sans;
@@ -186,6 +185,7 @@
   background-color: $hero-bgc;
   border-radius: 50%;
   z-index: 0;
+  margin-left: 16px;
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
