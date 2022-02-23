@@ -787,7 +787,6 @@ body.modal-open {
   .modal-header {
     min-width: 528px;
     min-height: 581px;
-    margin: auto;
     padding: 40px;
     -webkit-transform: perspective(600px) rotate(0deg);
             transform: perspective(600px) rotate(0deg);
@@ -1557,12 +1556,10 @@ body.modal-open {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   background-color: #ffa5ba;
-  background-image: url("../images/about/aboutCow-mob.png");
-  background-repeat: no-repeat;
-  background-position: contain;
   margin: auto;
+  padding: 45px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -1571,7 +1568,6 @@ body.modal-open {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .modal {
     width: 90vw;
-    overflow-y: scroll;
   }
 }
 
@@ -1583,13 +1579,27 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .modal {
-    width: 500px;
+    width: 600px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
+    width: 800px;
     font-size: 24px;
+  }
+}
+
+.cow-modal {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/about/cow-modal.png");
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .cow-modal {
+    background-image: url("../images/about/cow-modal@2x.png");
   }
 }
 
@@ -1618,11 +1628,6 @@ body.modal-open {
   cursor: pointer;
 }
 
-.modal-about__list {
-  padding: 15px;
-  margin-top: 30px;
-}
-
 .modal-about__text {
   font-family: DM Sans;
   font-style: normal;
@@ -1635,8 +1640,9 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: justify;
   text-indent: 25px;
-  color: #000000;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1653,7 +1659,7 @@ body.modal-open {
   }
 }
 
-.modal-about__item:not(:last-child) {
+.modal-about__text:not(:last-child) {
   margin-bottom: 10px;
 }
 
