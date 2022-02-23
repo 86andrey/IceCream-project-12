@@ -413,7 +413,7 @@ body.modal-open {
 .btn-arrow {
   margin-top: 10px;
   border: transparent;
-  background: #ffb8ca;
+  background: transparent;
 }
 @media screen and (max-width: 767px) {
   .btn-arrow {
@@ -702,7 +702,6 @@ body.modal-open {
   .modal-header {
     min-width: 528px;
     min-height: 581px;
-    margin: auto;
     padding: 40px;
     transform: perspective(600px) rotate(0deg);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -746,10 +745,13 @@ body.modal-open {
   background-color: #d41443;
 }
 
+
+
 .forma-header {
   overflow-y: scroll;
   margin: auto;
 }
+
 @media screen and (min-width: 1200px) {
   .forma-header {
     width: 448px;
@@ -1271,18 +1273,17 @@ body.modal-open {
   }
 }
 
-.line-break {
-  display: inline-block;
-  padding-top: 15px;
+.about-list__text:nth-child(2) {
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .about-list__item {
+  .about-list__text {
     width: 340px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .about-list__item {
+  .about-list__text {
     width: 463px;
   }
 }
@@ -1292,7 +1293,7 @@ body.modal-open {
   background-repeat: no-repeat;
   background-position: top 625px left 20px;
   background-size: contain;
-  background-image: url(../images/about/aboutBg-mob.png);
+  background-image: url("../images/about/aboutBg-mob.png");
 }
 @media screen and (min-width: 768px) {
   .about-bg-image {
@@ -1308,7 +1309,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .about-bg-image {
     padding: 125px 75px 65px 72px;
-    background-image: url(../images/about/aboutBg.png);
+    background-image: url("../images/about/aboutBg.png");
     background-position: top 255px left -10px;
   }
 }
@@ -1337,6 +1338,8 @@ body.modal-open {
   text-align: center;
   padding: 17px 17px;
   margin-top: 17px;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-btn:hover, .about-btn:focus {
   background-color: #ecebeb;
@@ -1378,34 +1381,52 @@ body.modal-open {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   background-color: #ffa5ba;
   margin: auto;
+
+  padding: 45px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .modal {
     width: 90vw;
-    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 480px) {
   .modal {
-    width: 80vw;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 80vw;
+    width: 600px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    width: 800px;
     font-size: 24px;
+  }
+}
+
+.cow-modal {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/about/cow-modal.png");
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .cow-modal {
+    background-image: url("../images/about/cow-modal@2x.png");
   }
 }
 
@@ -1428,11 +1449,6 @@ body.modal-open {
   cursor: pointer;
 }
 
-.modal-about__list {
-  padding: 15px;
-  margin-top: 30px;
-}
-
 .modal-about__text {
   font-family: DM Sans;
   font-style: normal;
@@ -1440,9 +1456,16 @@ body.modal-open {
   font-size: 13px;
   line-height: 1.3076923077;
   display: flex;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+
   align-items: center;
+
   text-indent: 25px;
-  color: #000000;
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .modal-about__text {
@@ -1457,7 +1480,7 @@ body.modal-open {
   }
 }
 
-.modal-about__item:not(:last-child) {
+.modal-about__text:not(:last-child) {
   margin-bottom: 10px;
 }
 
