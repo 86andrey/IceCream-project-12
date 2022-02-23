@@ -231,6 +231,24 @@ body.modal-open {
   margin-left: 12px;
 }
 
+.back-to-top {
+  background: #ffa5ba;
+  border-radius: 50%;
+  position: fixed;
+  bottom: -50px;
+  padding: 10px 12px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.back-to-top.active {
+  bottom: 50px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
 .hero {
   background-color: #ffb8ca;
 }
