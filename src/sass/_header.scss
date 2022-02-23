@@ -112,6 +112,7 @@
 
 // кнопка вверх
 .back-to-top {
+  z-index: 10;
   background: $hero-bgc;
   border-radius: 50%;
   position: fixed;

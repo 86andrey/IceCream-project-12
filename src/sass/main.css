@@ -232,6 +232,7 @@ body.modal-open {
 }
 
 .back-to-top {
+  z-index: 10;
   background: #ffa5ba;
   border-radius: 50%;
   position: fixed;
@@ -982,27 +983,21 @@ body.modal-open {
   position: absolute;
   right: 50px;
   width: 249px;
-  bottom: 50%;
+  bottom: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .cocktail__image {
-    width: 220px;
+    width: 249px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cocktail__image {
     width: 335px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .cocktail__image {
-    width: 249px;
   }
 }
 
@@ -1053,7 +1048,9 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .products-up__text {
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 
@@ -1076,6 +1073,14 @@ body.modal-open {
     margin-top: 15px;
     font-size: 48px;
     line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-up__title {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 259px;
   }
 }
 
@@ -1129,7 +1134,6 @@ body.modal-open {
 
 .products-content {
   text-align: center;
-  padding: 0px 44px 66px 44px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1156,8 +1160,14 @@ body.modal-open {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 22px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .products-content__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .products-content__dots {
@@ -1180,29 +1190,46 @@ body.modal-open {
   margin-right: 2px;
 }
 
+@media screen and (min-width: 1200px) {
+  .products-content__dots span {
+    margin-right: 4px;
+  }
+}
+
 .products-content__dots span:last-child {
   margin-right: 0px;
 }
 
 .products-content__text {
+  width: 200px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 152%;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .products-content__text {
+    line-height: 176%;
+    width: 198px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-content__text {
+    font-size: 16px;
+  }
 }
 
 .cocktail {
   border-radius: 24px;
   position: relative;
-  height: 485px;
-  padding-top: 138px;
+  padding-top: 161px;
+  padding-bottom: 41px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1231,7 +1258,6 @@ body.modal-open {
   border: none;
   cursor: pointer;
   padding: 0;
-  position: absolute;
   bottom: 50px;
   right: 0;
   left: 0;
